@@ -1,4 +1,5 @@
 import "../style/form.scss"
+import { Link } from "react-router"
 const Login = () => {
   return (
     <main>
@@ -9,6 +10,7 @@ const Login = () => {
                 <input type="password" name="password" placeholder="Password" />
                 <button type="submit">Login</button>
             </form>
+            <p>Don't Have an account? <Link className="toggleAuthForm" to="/register">Register</Link> </p>
         </div>
     </main>
   )
