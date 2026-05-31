@@ -1,4 +1,4 @@
-
+import "../style/form.scss"
 const Register = () => {
   return (
     <div>
