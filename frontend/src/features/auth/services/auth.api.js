@@ -39,3 +39,13 @@ export async function login(email, password) {
 
 
 }
+
+export async function getMe(req,res){
+    try {
+        const response = await api.get("/get-me")
+        return response.data
+    } catch (err) {
+        console.log(err)
+        
+    }
+}
